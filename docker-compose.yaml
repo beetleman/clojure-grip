@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  pushpin:
+    image: fanout/pushpin
+    network_mode: "host"
+    volumes:
+      - ./docker/routes:/etc/pushpin/routes
+
+
